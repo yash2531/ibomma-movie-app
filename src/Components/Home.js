@@ -7,7 +7,7 @@ const Home = () => {
     const navigate = useNavigate()
   return (
     <div className='container-c'>
-        <h1 className='title-main'>iBOMMA 2.0</h1>
+        <h1 className='title-main-m'>iBOMMA 2.0</h1>
         <div >
             <h3 className='subtitle'> 100% Telugu Entertainment</h3>
         </div>

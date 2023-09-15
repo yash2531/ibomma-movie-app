@@ -2,34 +2,47 @@ import React, { useState } from "react";
 import { useNavigate, NavLink } from "react-router-dom";
 import "../Styles/SignIn.css";
 
-const SignIn = () => {
+
+const SignIn = (props) => {
   const navigate = useNavigate();
+
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [rememberMe, setRememberMe] = useState(false);
 
+
   const [error, setError] = useState("");
 
+
   const handleSignIn = (e) => {
+    e.preventDefault();
     if (!email || !password) {
       setError("Please enter both email and password !");
       return;
     }
-
     setError("");
-    navigate("/Content");
+    navigate(`/Content?username=${email}`);
+
+
+    // const details = {
+    //   username: email,
+    //   password: password,
+    // };
+    // // console.log(details);
+    // props.usernameData1(details);
   };
 
+
   return (
-    <div className="Signin">
+    <form onSubmit={handleSignIn} className="Signin">
       <div className="Signin-container">
         <h2 className="Signin-header">Sign In</h2>
         {""}
         <br></br>
         <input
           className="input-name"
-          type="text"
+          type="email"
           placeholder="Enter your Email address"
           value={email}
           // onChange={inputBtn}
@@ -45,16 +58,13 @@ const SignIn = () => {
             setPassword(e.target.value);
           }}
         />
-        { error && <p className="error-msg">{error}</p>}
+        {error && <p className="error-msg">{error}</p>}
         <br></br>
-        <button className="Signin-button" onClick={handleSignIn}>
-          SignIn
-        </button>{" "}
-     <br/>
+        <button className="Signin-button">SignIn</button> <br />
         <br />
         <div className="remember-me">
           <label>
-            <input 
+            <input
               type="checkbox"
               checked={rememberMe}
               onChange={() => setRememberMe(!rememberMe)}
@@ -62,7 +72,8 @@ const SignIn = () => {
             Remember Me
           </label>
           <br />
-        
+
+
           <nav>
             <p className="text-last">
               New to iBomma?
@@ -75,8 +86,15 @@ const SignIn = () => {
           </nav>
         </div>
       </div>
-    </div>
+    </form>
   );
 };
 
+
 export default SignIn;
+
+
+
+
+
+
