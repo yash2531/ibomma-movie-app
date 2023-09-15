@@ -1,0 +1,74 @@
+
+
+.Signin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .Signin-container {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    height: auto;
+  }
+  
+  .Signin-header {
+    text-align: center;
+    margin-top: 0;
+    color: black;
+  }
+  
+  .input-name,
+  .input-pw {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .Signin-button {
+    background-color: rgb(17, 92, 2);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .Signin-button:hover {
+    background-color: rgb(17, 92, 2);
+  }
+  
+  signin-link {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  .signin-link:hover {
+    text-decoration: underline;
+  }
+  
+  .text-last{
+    font-size : 11pt !important ;
+    
+  }
+
+  .remember-me{
+    position: relative;
+    text-align: left;
+    font-size: 10pt ;
+    display: block;
+    margin-right: 10px;
+  }
+
+  .error-msg{
+    font-size: 8pt;
+    text-align: left;
+  }
