@@ -1,6 +1,6 @@
 .container {
   width: 100%;
-  margin-top: 3rem;
+  margin-top: 1rem;
 
   display: flex;
   justify-content: center;
@@ -9,8 +9,8 @@
 }
 
 .movie {
-  width: 310px;
-  height: 460px;
+  width: 250px;
+  height: auto;
   margin: 1.5rem;
 
   position: relative;

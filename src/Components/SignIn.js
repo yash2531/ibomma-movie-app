@@ -2,18 +2,14 @@ import React, { useState } from "react";
 import { useNavigate, NavLink } from "react-router-dom";
 import "../Styles/SignIn.css";
 
-
 const SignIn = (props) => {
   const navigate = useNavigate();
-
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [rememberMe, setRememberMe] = useState(false);
 
-
   const [error, setError] = useState("");
-
 
   const handleSignIn = (e) => {
     e.preventDefault();
@@ -22,8 +18,7 @@ const SignIn = (props) => {
       return;
     }
     setError("");
-    navigate(`/Content?username=${email}`);
-
+    navigate(`/Home?username=${email}`);
 
     // const details = {
     //   username: email,
@@ -32,7 +27,6 @@ const SignIn = (props) => {
     // // console.log(details);
     // props.usernameData1(details);
   };
-
 
   return (
     <form onSubmit={handleSignIn} className="Signin">
@@ -62,17 +56,19 @@ const SignIn = (props) => {
         <br></br>
         <button className="Signin-button">SignIn</button> <br />
         <br />
+        {""}
         <div className="remember-me">
           <label>
             <input
               type="checkbox"
               checked={rememberMe}
               onChange={() => setRememberMe(!rememberMe)}
-            />
+            />{" "}
+            {""}
+            {""}
             Remember Me
           </label>
           <br />
-
 
           <nav>
             <p className="text-last">
@@ -90,11 +86,4 @@ const SignIn = (props) => {
   );
 };
 
-
 export default SignIn;
-
-
-
-
-
-

@@ -1,0 +1,32 @@
+.title-bug{
+    justify-content: left;
+    margin-top: 8rem;
+    text-align: justify;
+    margin-left: 3rem;
+    color: white;
+    text-align: left;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+.faq{
+    color: green;
+    margin-top: 2rem;
+    text-align: justify;
+    margin-left: 3rem;
+    font-size: 15px;
+    
+}
+p{
+    color: aliceblue;
+    text-align: justify;
+    margin-left: 3rem;
+
+}
+
+.list-p{
+    color:whitesmoke;
+    text-align: justify;
+    margin-left: 3rem;
+
+
+}

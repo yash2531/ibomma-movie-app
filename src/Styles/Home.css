@@ -1,72 +1,146 @@
-body {
-    width: 100vw;
-    height: 100vh;
-    background: #0f0f0f;
-    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-    color: #0f0f0f;
-    margin: 0;
-    padding: 0;
-    display :rgb(5, 5, 5);
-  }
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
 
-  * {
-    box-sizing: border-box;
-  }
 
-  .container-c {
-    width: 600px;
-    transform: translate(-50%,-50%);
-    top: 45%;
-    left: 50%;
-    margin: 0;
-    position: absolute;
-    background: #151515;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-direction: column;
-    padding: 30px 0;
-    border-radius: 5px;
-    border: 1px solid #1f1f1f;
-    box-shadow: #050505 0 0 8px 0;
-  }
-
-  .title-main-m  {
-    justify-content: center;
-    color: rgb(4, 126, 0);
-  }
-
-  .subtitle {
-    color: #ccc;
-    letter-spacing: 0.1em;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.4;
-    margin: 1em auto 1.5em;
-  }
-
-  .enter-button {
-    width:100px;
-    padding: 10px;
-    font-size: 18px;
-    background-color: #138005;
-    border: 0;
-    cursor: pointer;
-    border-radius: 4px;
-    letter-spacing: 0.1em;
-    color: #000;
-    margin-right: 20px;
-    margin-bottom: 15px;
-    justify-content: center;
-    transition: all 0.25s ease-in-out;
-  }
-
-   
-.para{
-    display: block;
-    color: rgb(155, 146, 146);
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
 }
+
+
+:root {
+  --font-roboto: "Roboto Slab", serif;
+  --font-raleway: "Raleway", sans-serif;
+}
+
+
+body {
+  font-family: var(--font-roboto);
+  background-color: #212426;
+}
+
+
+.app-title {
+  padding: 4rem;
+
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.title-main {
+  font-size: 1.5rem;
+  letter-spacing: 0.9px;
+  margin-top: 0.5rem;
+  background: linear-gradient(
+    90deg,
+    rgb(29, 134, 3) 0%,
+    rgb(29, 134, 3) 0%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: fit-content;
+}
+h2 {
+  color: rgb(247, 242, 242);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.subtitle-main-c{
+  font-size: 1rem;
+  letter-spacing: 0.9px;
+  background: linear-gradient(
+    90deg,
+    rgb(213, 221, 211) 0%,
+    rgba(238, 236, 235) 0%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: fit-content;
+}
+
+.search {
+  width: 71%;
+  height: auto;
+  margin: 3rem 0 2rem;
+
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+  padding: 1.5rem 1.75rem;
+  border-radius: 3rem;
+  background: #1f2123;
+  -webkit-box-shadow: 5px 5px 7px #1c1d1f, -5px -5px 7px #222527;
+  box-shadow: 5px 5px 7px #1c1d1f, -5px -5px 7px #222527;
+}
+
+
+.search input {
+  flex: 1;
+  border: none;
+  font-size: 1.5rem;
+  font-family: var(--font-raleway);
+  font-weight: 500;
+  padding-right: 1rem;
+
+
+  outline: none;
+  color: #a1a1a1;
+  background: #1f2123;
+}
+
+
+.search img {
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
+
+
+.search button {
+  padding: 20px 40px;
+  border-radius: 0.5rem;
+  margin-left: 15px;
+  color: #a1a1a1;
+  font-family: var(--font-raleway);
+  font-weight: 900;
+  letter-spacing: 0.75px;
+  font-size: 1.25rem;
+  cursor: pointer;
+  background: #1f2123;
+  -webkit-box-shadow: 5px 5px 7px #1c1d1f, -5px -5px 7px #222527;
+  box-shadow: 5px 5px 7px #1c1d1f, -5px -5px 7px #222527;
+}
+
+
+.empty {
+  width: 100%;
+  margin-top: 3rem;
+
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.empty h2 {
+  font-size: 1.25rem;
+  color: #ffffff;
+  font-family: var(--font-raleway);
+}
+
+
+
+
+
+

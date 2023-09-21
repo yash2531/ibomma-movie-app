@@ -129,7 +129,7 @@ const SignUp = () => {
         <br />
         <br/>
         <nav>
-          <p>
+          <p className="para-al">
             Already Registered?
             <NavLink className="signin-link" to="/SignIn">
               {" "}
